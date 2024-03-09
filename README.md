@@ -24,8 +24,9 @@ We've made use of a variety of modules such as:
 ## How do we implement it? ##
 
 <p align="center">
-  <img width="auto" height="auto" src="https://github.com/jayanzth/intel-ai-hackathon/assets/93752903/7bd5e14d-58c4-4d8b-b8c2-4e65d9c18cab">
+  <img width="auto" height="auto" src="https://github.com/jayanzth/intel-ai-hackathon/assets/93752903/7cdc1d07-83c6-4895-ba60-6e0d0af7e9f7">
 </p>
+
 
 1. **Call Audio**: The process begins with collecting call audio recordings, which serve as the primary input for the customer satisfaction analysis.
 

@@ -34,12 +34,15 @@ We've made use of a variety of modules such as:
 3. **Prompt Template and Instructions**: After transcription, the instructions along with the previously generated inferences are compiled into a prompt template for further processing.
 
 4. **LLM (Neural Chat)**: The prompt template is sent to the LLM (**Intel® Neural Chat**), which processes the given template, making use of the instructions provided earlier.
-    <blockquote>
+
+   <blockquote>
       example = "Communication: 8.5/10 Resolution: 8/10 Emotion Handling: 7/10. So, the overall Customer Satisfaction Index can be calculated as the average of these three scores, which is approximately 7.8/10."
     </blockquote>
+    
     And the user template would be:
     <br><br>
-    <blockquote>
+
+   <blockquote>
       user_input = f"I will provide you with the transcripts of a customer service call. I will also provide you the tone of the voices at each timestamp.('a': Anger 'h': Happy 'n': Neutral) You have to analyse          both and come up with a Customer Satisfaction Index<Transcripts of the talks>\n{transcripts}<Transcripts of the talks\>\n<Tone and emotion of the voice>\n{emotions}<\Tone and emotion of the        voice>\n<Example>\n{example}<Example\>"
       </blockquote>
 
@@ -87,6 +90,20 @@ Utilizing Hugging Face's pipeline for automatic speech recognition, this file tr
 
 **mail.py**
 This file handles the sending of emails using the Azure Communication Service. It contains functionality to assess customer service calls and send emails based on the analysis conducted by the application. Email communication is crucial for providing feedback and taking necessary actions based on the analysis results, making this file an essential component of the application's workflow.
+
+## Quickstart ##
+
+Install all the necessary libraries needed using pip/pip3
+
+<blockquote>
+  pip install -r requirements.txt
+</blockquote>
+
+Start the streamlit server>>>>>>
+
+<blockquote>
+  streamlit run gui_new.py
+</blockquote>
 
 
 

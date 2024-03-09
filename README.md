@@ -30,7 +30,7 @@ We've made use of a variety of modules such as:
 
 2. **Whisper & Speechbrain**: The call audio undergoes processing using tools like Whisper and Speechbrain. These tools are used to perform tasks such as Speech Transription, and Emotion Detection, corresponding to each timestamp.
 
-3. **Prompt Template and Instructions**: After transcription, the instructions along with the previously generated inferences are compiled into a prompt template for further processing. (**Intel® Neural Chat**)
+3. **Prompt Template and Instructions**: After transcription, the instructions along with the previously generated inferences are compiled into a prompt template for further processing.
 
 4. **LLM (Neural Chat)**: The prompt template is sent to the LLM (**Intel® Neural Chat**), which processes the given template, making use of the instructions provided earlier.
     <blockquote>
@@ -49,5 +49,3 @@ We've made use of a variety of modules such as:
 8. **Chatbot**: The prompt is then fed into a chatbot, which interacts with users to address queries, provide additional information, or gather feedback.
 
 9. **Answer**: Finally, the chatbot generates responses based on the input prompt, user queries, and conversation buffer, delivering answers or engaging in conversation to support ongoing analysis and decision-making. The user queries and inferences are sent back to the Conversation Buffer to maintain a feedback loop.
-
-## Modules Used

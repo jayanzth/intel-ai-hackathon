@@ -51,10 +51,25 @@ We've made use of a variety of modules such as:
 
 9. **Answer**: Finally, the chatbot generates responses based on the input prompt, user queries, and conversation buffer, delivering answers or engaging in conversation to support ongoing analysis and decision-making. The user queries and inferences are sent back to the Conversation Buffer to maintain a feedback loop.
 
+10. **Email**: Before the LLM analyses the emotions and transcripts as mentioned in (4), it checks if there's an issue with the attitude of the official and sends an email to the management using Azure communication service highlighting the issues.
+  
+
 ## Cloud Architecture ##
 
+We have our complete project running on Intel Dev Cloud Instance with the following specifications,
+<p align="center">
+  <img width="auto" height="auto" src="https://github.com/jayanzth/intel-ai-hackathon/assets/85375873/7d2e858e-8e60-41ad-869c-6ed7358b70ad">
+</p>
+
+Also we use Secure shell to forward the necessary ports from our VM to local machine.
 <p align="center">
   <img width="auto" height="auto" src="https://github.com/jayanzth/intel-ai-hackathon/assets/93752903/cea74522-bab3-4d2b-a5db-75d35718acb9">
 </p>
+
+We forward port:8888 to access Jupyter notebooks for development and port:8501 for accessing streamlit UI.
+
+
+
+
 
 

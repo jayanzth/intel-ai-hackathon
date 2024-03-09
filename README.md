@@ -68,6 +68,26 @@ Also we use Secure shell to forward the necessary ports from our VM to local mac
 
 We forward port:8888 to access Jupyter notebooks for development and port:8501 for accessing streamlit UI.
 
+## Overview ##
+
+**gui_new.py**
+This script serves as the main entry point for the Streamlit application. It provides a user interface for uploading audio files of customer service calls and interacting with the system. The significance of this file lies in its ability to seamlessly integrate various functionalities and provide a user-friendly interface for users to analyze customer service calls.
+
+**main.py**
+This file contains the csi class, which encapsulates the core functionality of the application. It coordinates the processing of audio files, transcription of speech, and generation of responses. Additionally, it utilizes other modules such as gpt, speech_brain_app, transcription, and mail to achieve these tasks. The significance of this file lies in its role as the orchestrator of the entire analysis pipeline.
+
+**gpt.py**
+The HF_LLM class defined in this file is responsible for initializing a transformer-based language model for generating responses based on given inputs. This file plays a crucial role in natural language processing within the application, as it enables the system to understand and generate human-like responses based on customer service transcripts and emotions extracted from audio.
+
+**speech_brain_app.py**
+This file contains functionality to extract emotions from audio files using SpeechBrain's diarization model. Emotion detection is an essential aspect of customer service analysis, as it provides insights into the emotional state of both customers and service representatives during calls. This file enhances the application's ability to provide comprehensive feedback on customer interactions.
+
+**transcription.py**
+Utilizing Hugging Face's pipeline for automatic speech recognition, this file transcribes audio files into text. Transcription forms the foundation of the application's analysis process by converting spoken words into a format that can be processed and analyzed further. The significance of this file lies in its role in converting audio data into a readable format for analysis.
+
+**mail.py**
+This file handles the sending of emails using the Azure Communication Service. It contains functionality to assess customer service calls and send emails based on the analysis conducted by the application. Email communication is crucial for providing feedback and taking necessary actions based on the analysis results, making this file an essential component of the application's workflow.
+
 
 
 

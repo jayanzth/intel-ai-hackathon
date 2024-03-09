@@ -19,6 +19,7 @@ We've made use of a variety of modules such as:
 - **SpeechBrain**
 - **Streamlit**
 - **Transformers (HuggingFace)**
+- **Azure Communication Services (azure.communication.mail)**
 
 ## How do we implement it? ##
 
@@ -49,3 +50,11 @@ We've made use of a variety of modules such as:
 8. **Chatbot**: The prompt is then fed into a chatbot, which interacts with users to address queries, provide additional information, or gather feedback.
 
 9. **Answer**: Finally, the chatbot generates responses based on the input prompt, user queries, and conversation buffer, delivering answers or engaging in conversation to support ongoing analysis and decision-making. The user queries and inferences are sent back to the Conversation Buffer to maintain a feedback loop.
+
+## Cloud Architecture ##
+
+<p align="center">
+  <img width="auto" height="auto" src="https://github.com/jayanzth/intel-ai-hackathon/assets/93752903/cea74522-bab3-4d2b-a5db-75d35718acb9">
+</p>
+
+
